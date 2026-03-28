@@ -1,0 +1,36 @@
+README.md
+  26c71e65cc357b9c 1-60
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.22",
+  "base_commit_sha": "502c08b0b9cc9e4b775e392e4c736b0a4963ed81",
+  "prompts": {
+    "26c71e65cc357b9c": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "8de1cb00-3e98-48ef-a43d-3aa2bd77a9ec",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "David Hodge <david.hodge@lucidtechnics.com>",
+      "messages": [],
+      "total_additions": 60,
+      "total_deletions": 0,
+      "accepted_lines": 60,
+      "overriden_lines": 0
+    },
+    "5155f97630b4a86c": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "cd586e1f-44f8-4bb8-b3fd-81bf5de2d361",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "David Hodge <david.hodge@lucidtechnics.com>",
+      "messages": [],
+      "total_additions": 537,
+      "total_deletions": 0,
+      "accepted_lines": 624,
+      "overriden_lines": 0
+    }
+  }
+}
