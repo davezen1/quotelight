@@ -15,7 +15,7 @@ if (typeof document !== 'undefined' && typeof window !== 'undefined') {
 
   function initPopup() {
     popupHost = document.createElement('div');
-    popupHost.id = 'selectshare-host';
+    popupHost.id = 'quotelight-host';
     document.body.appendChild(popupHost);
     shadowRoot = popupHost.attachShadow({ mode: 'closed' });
     const style = document.createElement('link');
@@ -23,7 +23,7 @@ if (typeof document !== 'undefined' && typeof window !== 'undefined') {
     style.href = chrome.runtime.getURL('content/content.css');
     shadowRoot.appendChild(style);
     popupEl = document.createElement('div');
-    popupEl.className = 'selectshare-popup';
+    popupEl.className = 'quotelight-popup';
     shadowRoot.appendChild(popupEl);
   }
 
@@ -38,16 +38,16 @@ if (typeof document !== 'undefined' && typeof window !== 'undefined') {
 
     // Header
     const header = document.createElement('div');
-    header.className = 'selectshare-header';
+    header.className = 'quotelight-header';
     const label = document.createElement('span');
     label.className = 'label';
-    label.textContent = 'SelectShare';
+    label.textContent = 'QuoteLight';
     header.appendChild(label);
     popupEl.appendChild(header);
 
     // Quote section
     const quoteSection = document.createElement('div');
-    quoteSection.className = 'selectshare-quote';
+    quoteSection.className = 'quotelight-quote';
     const quoteText = document.createElement('p');
     quoteText.className = 'quote-text';
     quoteText.textContent = `\u201C${previewQuote}\u201D`;
@@ -58,7 +58,7 @@ if (typeof document !== 'undefined' && typeof window !== 'undefined') {
 
     // Platform buttons
     const platformsContainer = document.createElement('div');
-    platformsContainer.className = 'selectshare-platforms';
+    platformsContainer.className = 'quotelight-platforms';
     const platformEntries = Object.entries(PLATFORMS);
     platformEntries.forEach(([key, platform], i) => {
       const btn = document.createElement('button');

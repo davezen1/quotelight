@@ -5,7 +5,7 @@
   line-height: 1.4;
 }
 
-.selectshare-popup {
+.quotelight-popup {
   position: absolute;
   z-index: 2147483647;
   background: #fff;
@@ -19,13 +19,13 @@
   pointer-events: none;
 }
 
-.selectshare-popup.visible {
+.quotelight-popup.visible {
   opacity: 1;
   transform: scale(1);
   pointer-events: auto;
 }
 
-.selectshare-popup .arrow {
+.quotelight-popup .arrow {
   position: absolute;
   width: 12px;
   height: 12px;
@@ -34,34 +34,34 @@
   box-shadow: -2px -2px 4px rgba(0, 0, 0, 0.05);
 }
 
-.selectshare-popup .arrow.up {
+.quotelight-popup .arrow.up {
   top: -6px;
   left: 24px;
 }
 
-.selectshare-popup .arrow.down {
+.quotelight-popup .arrow.down {
   bottom: -6px;
   left: 24px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.05);
 }
 
-.selectshare-header {
+.quotelight-header {
   padding: 10px 14px 6px;
   border-bottom: 1px solid #eee;
 }
 
-.selectshare-header .label {
+.quotelight-header .label {
   font-size: 11px;
   color: #888;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
 
-.selectshare-quote {
+.quotelight-quote {
   padding: 10px 14px;
 }
 
-.selectshare-quote .quote-text {
+.quotelight-quote .quote-text {
   font-size: 13px;
   color: #333;
   line-height: 1.5;
@@ -71,24 +71,24 @@
   margin: 0;
 }
 
-.selectshare-quote .attribution {
+.quotelight-quote .attribution {
   font-size: 11px;
   color: #888;
   margin-top: 6px;
 }
 
-.selectshare-quote .attribution strong {
+.quotelight-quote .attribution strong {
   color: #555;
 }
 
-.selectshare-platforms {
+.quotelight-platforms {
   padding: 8px 14px 12px;
   display: flex;
   gap: 6px;
   flex-wrap: wrap;
 }
 
-.selectshare-platforms .platform-btn {
+.quotelight-platforms .platform-btn {
   width: 36px;
   height: 36px;
   border-radius: 8px;
@@ -104,26 +104,26 @@
   padding: 0;
 }
 
-.selectshare-platforms .platform-btn:hover {
+.quotelight-platforms .platform-btn:hover {
   transform: scale(1.1);
   opacity: 0.9;
 }
 
-.selectshare-platforms .more-btn {
+.quotelight-platforms .more-btn {
   background: #ddd;
   color: #666;
   font-size: 14px;
 }
 
-.selectshare-platforms.expanded .more-btn {
+.quotelight-platforms.expanded .more-btn {
   display: none;
 }
 
-.selectshare-platforms .platform-btn.overflow {
+.quotelight-platforms .platform-btn.overflow {
   display: none;
 }
 
-.selectshare-platforms.expanded .platform-btn.overflow {
+.quotelight-platforms.expanded .platform-btn.overflow {
   display: flex;
 }
 

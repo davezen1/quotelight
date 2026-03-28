@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "SelectShare",
+  "name": "QuoteLight",
   "version": "1.0.0",
-  "description": "Highlight any quote and share it with attribution to social media.",
+  "description": "Highlight any quote and share it with attribution to social media. Shine a light on what's worth reading.",
   "permissions": ["activeTab", "storage"],
   "content_scripts": [
     {

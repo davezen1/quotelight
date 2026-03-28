@@ -8,7 +8,7 @@ const files = [
 
 mkdirSync('dist', { recursive: true });
 
-let output = '// SelectShare - auto-generated bundle\n';
+let output = '// QuoteLight - auto-generated bundle\n';
 output += '(function() {\n';
 
 for (const file of files) {
