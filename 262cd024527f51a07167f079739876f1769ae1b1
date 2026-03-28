@@ -1,0 +1,25 @@
+content/metadata.js
+  5155f97630b4a86c 1-75
+tests/metadata.test.js
+  5155f97630b4a86c 1-91
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.17",
+  "base_commit_sha": "262cd024527f51a07167f079739876f1769ae1b1",
+  "prompts": {
+    "5155f97630b4a86c": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "cd586e1f-44f8-4bb8-b3fd-81bf5de2d361",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "David Hodge <david.hodge@lucidtechnics.com>",
+      "messages": [],
+      "total_additions": 352,
+      "total_deletions": 0,
+      "accepted_lines": 352,
+      "overriden_lines": 0
+    }
+  }
+}
