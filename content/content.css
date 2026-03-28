@@ -1,0 +1,174 @@
+:host {
+  all: initial;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.selectshare-popup {
+  position: fixed;
+  z-index: 2147483647;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+  width: 320px;
+  overflow: hidden;
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 150ms ease-out, transform 150ms ease-out;
+  pointer-events: none;
+}
+
+.selectshare-popup.visible {
+  opacity: 1;
+  transform: scale(1);
+  pointer-events: auto;
+}
+
+.selectshare-popup .arrow {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: #fff;
+  transform: rotate(45deg);
+  box-shadow: -2px -2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.selectshare-popup .arrow.up {
+  top: -6px;
+  left: 24px;
+}
+
+.selectshare-popup .arrow.down {
+  bottom: -6px;
+  left: 24px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.selectshare-header {
+  padding: 10px 14px 6px;
+  border-bottom: 1px solid #eee;
+}
+
+.selectshare-header .label {
+  font-size: 11px;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.selectshare-quote {
+  padding: 10px 14px;
+}
+
+.selectshare-quote .quote-text {
+  font-size: 13px;
+  color: #333;
+  line-height: 1.5;
+  font-style: italic;
+  border-left: 3px solid #2d7ff9;
+  padding-left: 10px;
+  margin: 0;
+}
+
+.selectshare-quote .attribution {
+  font-size: 11px;
+  color: #888;
+  margin-top: 6px;
+}
+
+.selectshare-quote .attribution strong {
+  color: #555;
+}
+
+.selectshare-platforms {
+  padding: 8px 14px 12px;
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.selectshare-platforms .platform-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  transition: transform 100ms ease, opacity 100ms ease;
+  padding: 0;
+}
+
+.selectshare-platforms .platform-btn:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+.selectshare-platforms .more-btn {
+  background: #ddd;
+  color: #666;
+  font-size: 14px;
+}
+
+.selectshare-platforms.expanded .more-btn {
+  display: none;
+}
+
+.selectshare-platforms .platform-btn.overflow {
+  display: none;
+}
+
+.selectshare-platforms.expanded .platform-btn.overflow {
+  display: flex;
+}
+
+.mastodon-prompt {
+  padding: 8px 14px 12px;
+  display: none;
+}
+
+.mastodon-prompt.visible {
+  display: block;
+}
+
+.mastodon-prompt label {
+  font-size: 12px;
+  color: #555;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.mastodon-prompt input {
+  width: 100%;
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 13px;
+  box-sizing: border-box;
+}
+
+.mastodon-prompt .prompt-actions {
+  display: flex;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.mastodon-prompt .prompt-actions button {
+  padding: 4px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  font-size: 12px;
+  background: #fff;
+}
+
+.mastodon-prompt .prompt-actions button.primary {
+  background: #6364FF;
+  color: #fff;
+  border-color: #6364FF;
+}
