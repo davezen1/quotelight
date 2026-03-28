@@ -21,5 +21,5 @@ for (const file of files) {
 }
 
 output += '\n})();\n';
-writeFileSync('dist/selectshare.js', output);
-console.log('Built dist/selectshare.js');
+writeFileSync('dist/quotelight.js', output);
+console.log('Built dist/quotelight.js');
