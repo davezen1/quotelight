@@ -70,11 +70,11 @@ Degraded examples:
 
 | Platform | Intent URL Pattern | Char Limit | Notes |
 |----------|-------------------|------------|-------|
-| X (Twitter) | `https://twitter.com/intent/tweet?text={text}` | 280 | Truncate quote with "…" if needed, always keep URL |
-| Facebook | `https://www.facebook.com/sharer/sharer.php?quote={text}&u={url}` | No practical limit | URL generates link preview |
-| LinkedIn | `https://www.linkedin.com/sharing/share-offsite/?url={url}` | 3000 | Full format |
+| X (Twitter) | `https://x.com/intent/post?text={text}` | 280 | Truncate quote with "…" if needed, always keep URL |
+| Facebook | `https://www.facebook.com/sharer/sharer.php?quote={text}&u={url}` | No practical limit | `quote` param may be ignored; URL generates link preview. Include quote in URL if ignored. |
+| LinkedIn | `https://www.linkedin.com/sharing/share-offsite/?url={url}` | URL only | Only accepts URL — no custom body text. Link preview is generated from the page. |
 | Reddit | `https://reddit.com/submit?title={title}&url={url}` | Title limit | Quote goes in title, article URL as the link |
-| Mastodon | `https://{instance}/share?text={text}` | 500 | Prompt for instance URL on first use, save to `chrome.storage.local` |
+| Mastodon | `https://{instance}/share?text={text}` | 500 | Prompt for instance URL on first use, validate URL format, save to `chrome.storage.local` |
 | Bluesky | `https://bsky.app/intent/compose?text={text}` | 300 | Truncate quote if needed, always keep URL |
 | WhatsApp | `https://api.whatsapp.com/send?text={text}` | No practical limit | Full format |
 | Telegram | `https://t.me/share/url?url={url}&text={text}` | No practical limit | Full format |
