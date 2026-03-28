@@ -1,0 +1,23 @@
+docs/superpowers/plans/2026-03-28-selectshare.md
+  5155f97630b4a86c 1-1258
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.17",
+  "base_commit_sha": "e75a907c165d2282bad311eefca5781eee63af25",
+  "prompts": {
+    "5155f97630b4a86c": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "cd586e1f-44f8-4bb8-b3fd-81bf5de2d361",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "David Hodge <david.hodge@lucidtechnics.com>",
+      "messages": [],
+      "total_additions": 1305,
+      "total_deletions": 47,
+      "accepted_lines": 1258,
+      "overriden_lines": 0
+    }
+  }
+}
