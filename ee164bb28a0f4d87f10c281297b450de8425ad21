@@ -1,0 +1,31 @@
+content/content.js
+  5155f97630b4a86c 18,26,41,44,50,61
+package.json
+  5155f97630b4a86c 2
+content/content.css
+  5155f97630b4a86c 8,22,28,37,42,48,53,60,64,74,80,84,91,107,112,118,122,126
+build.js
+  5155f97630b4a86c 11
+manifest.json
+  5155f97630b4a86c 3,5
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.17",
+  "base_commit_sha": "ee164bb28a0f4d87f10c281297b450de8425ad21",
+  "prompts": {
+    "5155f97630b4a86c": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "cd586e1f-44f8-4bb8-b3fd-81bf5de2d361",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "David Hodge <david.hodge@lucidtechnics.com>",
+      "messages": [],
+      "total_additions": 28,
+      "total_deletions": 28,
+      "accepted_lines": 28,
+      "overriden_lines": 0
+    }
+  }
+}
