@@ -103,6 +103,7 @@ const PLATFORMS = {
 
 // --- content/metadata.js ---
 let cachedMetadata = null;
+let cachedUrl = null;
 
 function extractFromOpenGraph(doc) {
   const get = (sel) => doc.querySelector(sel)?.content || null;
@@ -128,7 +129,9 @@ function extractFromJsonLd(doc) {
       if (!['Article', 'NewsArticle', 'BlogPosting'].includes(type)) continue;
       result.title = data.headline || null;
       if (data.author) {
-        result.author = typeof data.author === 'string' ? data.author : data.author.name || null;
+        let author = data.author;
+        if (Array.isArray(author)) author = author[0];
+        result.author = typeof author === 'string' ? author : author?.name || null;
       }
       if (data.publisher) {
         result.siteName = typeof data.publisher === 'string' ? data.publisher : data.publisher.name || null;
@@ -169,12 +172,14 @@ function mergeMetadata(og, jsonLd, twitter, heuristic) {
 }
 
 function getMetadata(doc) {
-  if (cachedMetadata) return cachedMetadata;
+  const currentUrl = doc.location?.href;
+  if (cachedMetadata && cachedUrl === currentUrl) return cachedMetadata;
   const og = extractFromOpenGraph(doc);
   const jsonLd = extractFromJsonLd(doc);
   const twitter = extractFromTwitterCards(doc);
   const heuristic = extractFromHeuristics(doc);
   cachedMetadata = mergeMetadata(og, jsonLd, twitter, heuristic);
+  cachedUrl = currentUrl;
   return cachedMetadata;
 }
 
@@ -362,7 +367,7 @@ if (typeof document !== 'undefined' && typeof window !== 'undefined') {
   function handlePlatformClick(platformKey, quote, metadata) {
     if (platformKey === 'mastodon') {
       chrome.storage.local.get('mastodonInstance', (result) => {
-        if (result.mastodonInstance) {
+        if (result.mastodonInstance && isValidInstance(result.mastodonInstance)) {
           const url = PLATFORMS.mastodon.buildUrl(quote, metadata, result.mastodonInstance);
           window.open(url, '_blank');
           hidePopup();

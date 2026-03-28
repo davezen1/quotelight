@@ -181,7 +181,7 @@ if (typeof document !== 'undefined' && typeof window !== 'undefined') {
   function handlePlatformClick(platformKey, quote, metadata) {
     if (platformKey === 'mastodon') {
       chrome.storage.local.get('mastodonInstance', (result) => {
-        if (result.mastodonInstance) {
+        if (result.mastodonInstance && isValidInstance(result.mastodonInstance)) {
           const url = PLATFORMS.mastodon.buildUrl(quote, metadata, result.mastodonInstance);
           window.open(url, '_blank');
           hidePopup();

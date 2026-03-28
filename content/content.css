@@ -6,7 +6,7 @@
 }
 
 .selectshare-popup {
-  position: fixed;
+  position: absolute;
   z-index: 2147483647;
   background: #fff;
   border-radius: 12px;
