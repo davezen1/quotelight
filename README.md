@@ -2,6 +2,8 @@
 
 A Chrome extension that lets you highlight any quote on a webpage and share it to social media with automatic source attribution.
 
+![QuoteLight in action](screenshots/screenshot-1.png)
+
 ## How It Works
 
 1. Highlight text on any webpage
