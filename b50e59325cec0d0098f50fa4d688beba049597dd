@@ -1,0 +1,23 @@
+docs/superpowers/specs/2026-03-28-selectshare-design.md
+  5155f97630b4a86c 73-75,77
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.17",
+  "base_commit_sha": "b50e59325cec0d0098f50fa4d688beba049597dd",
+  "prompts": {
+    "5155f97630b4a86c": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "cd586e1f-44f8-4bb8-b3fd-81bf5de2d361",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "David Hodge <david.hodge@lucidtechnics.com>",
+      "messages": [],
+      "total_additions": 4,
+      "total_deletions": 4,
+      "accepted_lines": 4,
+      "overriden_lines": 0
+    }
+  }
+}
