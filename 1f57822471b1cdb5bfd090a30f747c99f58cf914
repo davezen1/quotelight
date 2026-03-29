@@ -1,0 +1,38 @@
+LICENSE
+  26c71e65cc357b9c 1-190
+PRIVACY.md
+  26c71e65cc357b9c 1-49
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.22",
+  "base_commit_sha": "1f57822471b1cdb5bfd090a30f747c99f58cf914",
+  "prompts": {
+    "26c71e65cc357b9c": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "8de1cb00-3e98-48ef-a43d-3aa2bd77a9ec",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "David Hodge <david.hodge@lucidtechnics.com>",
+      "messages": [],
+      "total_additions": 239,
+      "total_deletions": 0,
+      "accepted_lines": 239,
+      "overriden_lines": 0
+    },
+    "5155f97630b4a86c": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "cd586e1f-44f8-4bb8-b3fd-81bf5de2d361",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "David Hodge <david.hodge@lucidtechnics.com>",
+      "messages": [],
+      "total_additions": 0,
+      "total_deletions": 0,
+      "accepted_lines": 624,
+      "overriden_lines": 0
+    }
+  }
+}
